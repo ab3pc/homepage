@@ -14,6 +14,7 @@ body {
   --icon-color: #6a737d;
   --border-color: #ffe822;
   --text-decoration-color: #0d86ff;
+  --textcolor-header: #0d86ff;
 }
 .img {
   display: block;
@@ -175,7 +176,7 @@ hr {
 }
 .content__skills-title {
   margin-bottom: 15px;
-  color: #000;
+  color: var(--textcolor-header);
 }
 .content__skills-inner {
   display: flex;
@@ -220,6 +221,92 @@ hr {
 
 .skills__item-text {
   vertical-align: middle;
+}
+
+.content__education {
+	margin-bottom: 15px;
+}
+.content__education-title {
+
+	margin-bottom: 15px;
+	color: var(--textcolor-header);
+	display: flex;
+	align-items: center;
+}
+.content__education-item {
+	margin-left: 15px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	position: relative;
+	border-left: 1px solid #33363D;
+
+	
+}
+
+.content__education-item:last-child {
+	border-left: none;
+}
+.content__education-item:before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #0D86FF;
+	position: absolute;
+	left: -5px;
+	top: 0px;
+	box-shadow: 0px 0px 5px 4px #0d86ff71;
+	transition: box-shadow .2s linear;
+}
+.content__education-item:hover:before {
+	box-shadow: 0px 0px 12px 12px #0d86ff71;
+}
+
+.education__item-title {
+	top: -3px;
+	position: relative;
+	color: var(--textcolor-header);
+}
+
+.icon__education {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.content__eng {
+	margin-bottom: 40px;
+}
+.content__eng svg{
+	margin-right: 5px;
+	width: 35px;
+	height: 35px;
+	fill: #007bff;
+	
+}
+.content__eng ul {
+margin-left: 30px;
+	
+}
+.content__eng ul li {
+  list-style: none;
+	padding-left: 7px;
+	position: relative;
+	margin-bottom: 15px;
+	
+}
+.content__eng ul li:hover svg{
+
+	box-shadow: 0px 0px 11px 1px #007bff;
+}
+.content__eng ul li svg{
+	position: absolute;
+	left: -25px;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	transition: box-shadow 0.1s linear;
 }
 
 @media screen and (max-width: 576px) {
