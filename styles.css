@@ -264,9 +264,14 @@ hr {
 }
 
 .education__item-title {
-	top: -3px;
+	top: -4px;
 	position: relative;
 	color: var(--textcolor-header);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.education__item-title:hover {
+	font-weight: 700;
 }
 
 .icon__education {
@@ -318,6 +323,36 @@ margin-left: 30px;
 .content__works .skills__item a:hover{
   
   color: #fff;
+}
+.timeline__info-date {
+  display: block;
+
+}
+.timeline__info {
+  display: inline-block;
+}
+.content__education-item .timeline__info-date {
+  display: none;
+  opacity: 0;
+
+  transition: all 0.2s;
+}
+.content__education-item.show .timeline__info-date {
+  display: block;
+  animation: showBlock 1s linear forwards;
+}
+.show {
+  
+  animation: showBlock 0.5s linear forwards;
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 576px) {
