@@ -12,9 +12,13 @@
         <div class="container">
           <div class="resume__block">
             <header class="header" id="header">
+                <div title="unofficial mode"><svg class="unofficialMode" id="unofficialMode"  viewBox="0 0 20 20">
+                    <path d="M10.219,1.688c-4.471,0-8.094,3.623-8.094,8.094s3.623,8.094,8.094,8.094s8.094-3.623,8.094-8.094S14.689,1.688,10.219,1.688 M10.219,17.022c-3.994,0-7.242-3.247-7.242-7.241c0-3.994,3.248-7.242,7.242-7.242c3.994,0,7.241,3.248,7.241,7.242C17.46,13.775,14.213,17.022,10.219,17.022 M15.099,7.03c-0.167-0.167-0.438-0.167-0.604,0.002L9.062,12.48l-2.269-2.277c-0.166-0.167-0.437-0.167-0.603,0c-0.166,0.166-0.168,0.437-0.002,0.603l2.573,2.578c0.079,0.08,0.188,0.125,0.3,0.125s0.222-0.045,0.303-0.125l5.736-5.751C15.268,7.466,15.265,7.196,15.099,7.03"></path>
+                </svg></div>
+               
               <div class="headr__left">
                 <div class="header__photo">
-                  <img class="img" src="./assets/avatar.jpg" alt="Photo" />
+                  <img id="avatar" class="img" src="./assets/avatar.jpg" alt="Photo" />
                 </div>
                 <div class="header__info">
                   <h1 class="header__name">Oleksandr Borysenko</h1>
@@ -68,7 +72,8 @@
               </div>
 
             </header>
-            <div class="intro">
+           
+            <div class="intro" id="intro">
                 <div class="intro__icon-wrapper">
                   <svg class="intro__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path
@@ -76,7 +81,7 @@
                     ></path>
                   </svg>
                 </div>
-                <p class="intro_text">
+                <p class="intro_text" id="intro_text">
                   I'm a goal oriented front-end developer with experience in creating Landing Pages and SPA, using
                   React(JS/TS), Redux, HTML & CSS. Now I am improving my skills in this direction and expanding them with
                   new technologies...just junior =)
@@ -85,63 +90,192 @@
               
               </div>
           </div>
-            
+          <hr>
         </div>
+        
         <div class="container">
           <div class="resume__block">
-            <div class="skills">
-              <h3 class="skills__header">Skills</h3>
-              <p class="skills__text">Sleep, eat, more sleep, meow, mrrr, purr.</p>
-            </div>
+            <section class="content__skills">
+                <h2 class="content__skills-title">SKILLS</h2>
+                <div class="content__skills-inner">
+
+
+
+                    <div class="skills__item">
+                        
+                        <div class="skills__item-text">
+                            
+                            <h3> <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M17.592,8.936l-6.531-6.534c-0.593-0.631-0.751-0.245-0.751,0.056l0.002,2.999L5.427,9.075H2.491c-0.839,0-0.162,0.901-0.311,0.752l3.683,3.678l-3.081,3.108c-0.17,0.171-0.17,0.449,0,0.62c0.169,0.17,0.448,0.17,0.618,0l3.098-3.093l3.675,3.685c-0.099-0.099,0.773,0.474,0.773-0.296v-2.965l3.601-4.872l2.734-0.005C17.73,9.688,18.326,9.669,17.592,8.936 M3.534,9.904h1.906l4.659,4.66v1.906L3.534,9.904z M10.522,13.717L6.287,9.48l4.325-3.124l3.088,3.124L10.522,13.717z M14.335,8.845l-3.177-3.177V3.762l5.083,5.083H14.335z"></path>
+                            </svg> HTML5</h3>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                                            <div class="skills__item-text">
+                            <h3><svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M17.592,8.936l-6.531-6.534c-0.593-0.631-0.751-0.245-0.751,0.056l0.002,2.999L5.427,9.075H2.491c-0.839,0-0.162,0.901-0.311,0.752l3.683,3.678l-3.081,3.108c-0.17,0.171-0.17,0.449,0,0.62c0.169,0.17,0.448,0.17,0.618,0l3.098-3.093l3.675,3.685c-0.099-0.099,0.773,0.474,0.773-0.296v-2.965l3.601-4.872l2.734-0.005C17.73,9.688,18.326,9.669,17.592,8.936 M3.534,9.904h1.906l4.659,4.66v1.906L3.534,9.904z M10.522,13.717L6.287,9.48l4.325-3.124l3.088,3.124L10.522,13.717z M14.335,8.845l-3.177-3.177V3.762l5.083,5.083H14.335z"></path>
+                            </svg>CSS3</h3>
+                        </div>
+                    </div>
+
+                    <div class="skills__item">
+                        
+                        <div class="skills__item-text">
+                            <h3><svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M17.592,8.936l-6.531-6.534c-0.593-0.631-0.751-0.245-0.751,0.056l0.002,2.999L5.427,9.075H2.491c-0.839,0-0.162,0.901-0.311,0.752l3.683,3.678l-3.081,3.108c-0.17,0.171-0.17,0.449,0,0.62c0.169,0.17,0.448,0.17,0.618,0l3.098-3.093l3.675,3.685c-0.099-0.099,0.773,0.474,0.773-0.296v-2.965l3.601-4.872l2.734-0.005C17.73,9.688,18.326,9.669,17.592,8.936 M3.534,9.904h1.906l4.659,4.66v1.906L3.534,9.904z M10.522,13.717L6.287,9.48l4.325-3.124l3.088,3.124L10.522,13.717z M14.335,8.845l-3.177-3.177V3.762l5.083,5.083H14.335z"></path>
+                            </svg>JS & TS</h3>
+                        </div>
+                    </div>
+
+                    <div class="skills__item">
+                                               <div class="skills__item-text">
+                            <h3><svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M17.592,8.936l-6.531-6.534c-0.593-0.631-0.751-0.245-0.751,0.056l0.002,2.999L5.427,9.075H2.491c-0.839,0-0.162,0.901-0.311,0.752l3.683,3.678l-3.081,3.108c-0.17,0.171-0.17,0.449,0,0.62c0.169,0.17,0.448,0.17,0.618,0l3.098-3.093l3.675,3.685c-0.099-0.099,0.773,0.474,0.773-0.296v-2.965l3.601-4.872l2.734-0.005C17.73,9.688,18.326,9.669,17.592,8.936 M3.534,9.904h1.906l4.659,4.66v1.906L3.534,9.904z M10.522,13.717L6.287,9.48l4.325-3.124l3.088,3.124L10.522,13.717z M14.335,8.845l-3.177-3.177V3.762l5.083,5.083H14.335z"></path>
+                            </svg>React & RN</h3>
+                        </div>
+                    </div>
+                    <div class="skills__item">
+                       
+                        <div class="skills__item-text">
+                            <h3><svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M17.592,8.936l-6.531-6.534c-0.593-0.631-0.751-0.245-0.751,0.056l0.002,2.999L5.427,9.075H2.491c-0.839,0-0.162,0.901-0.311,0.752l3.683,3.678l-3.081,3.108c-0.17,0.171-0.17,0.449,0,0.62c0.169,0.17,0.448,0.17,0.618,0l3.098-3.093l3.675,3.685c-0.099-0.099,0.773,0.474,0.773-0.296v-2.965l3.601-4.872l2.734-0.005C17.73,9.688,18.326,9.669,17.592,8.936 M3.534,9.904h1.906l4.659,4.66v1.906L3.534,9.904z M10.522,13.717L6.287,9.48l4.325-3.124l3.088,3.124L10.522,13.717z M14.335,8.845l-3.177-3.177V3.762l5.083,5.083H14.335z"></path>
+                            </svg>Redux Toolkit</h3>
+                        </div>
+                    </div>
+                     <div class="skills__item">
+                     
+                        <div class="skills__item-text">
+                            <h3><svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M17.592,8.936l-6.531-6.534c-0.593-0.631-0.751-0.245-0.751,0.056l0.002,2.999L5.427,9.075H2.491c-0.839,0-0.162,0.901-0.311,0.752l3.683,3.678l-3.081,3.108c-0.17,0.171-0.17,0.449,0,0.62c0.169,0.17,0.448,0.17,0.618,0l3.098-3.093l3.675,3.685c-0.099-0.099,0.773,0.474,0.773-0.296v-2.965l3.601-4.872l2.734-0.005C17.73,9.688,18.326,9.669,17.592,8.936 M3.534,9.904h1.906l4.659,4.66v1.906L3.534,9.904z M10.522,13.717L6.287,9.48l4.325-3.124l3.088,3.124L10.522,13.717z M14.335,8.845l-3.177-3.177V3.762l5.083,5.083H14.335z"></path>
+                            </svg>GIT</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </section>
           </div>
+          <hr>
         </div>
         <div class="container">
           <div class="resume__block">
-            <div class="main-info fh">
-              <div class="experiences">
-                <div class="experiences">
-                  <h3 class="experiences__header">Experience</h3>
-                  <div class="experiences__company">
-                    <div class="experiences__company-header">
-                      <span class="experiences__company-header-durability">For whole my life</span>
-                      <h3 class="experiences__company-header-name">BinaryStudio</h3>
+            <section class="content__education" id="timeLineSection">
+                <h2 class="content__education-title"><img class="icon__education" src="assets/icon-education.svg"
+                        alt="icon education">TIMELINE</h2>
+
+               
+                
+                
+
+                
+
+            </section>
+            <hr>
+            <section class="content__eng">
+                <h2 class="content__education-title">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+                        <path d="M17.659,3.681H8.468c-0.211,0-0.383,0.172-0.383,0.383v2.681H2.341c-0.21,0-0.383,0.172-0.383,0.383v6.126c0,0.211,0.172,0.383,0.383,0.383h1.532v2.298c0,0.566,0.554,0.368,0.653,0.27l2.569-2.567h4.437c0.21,0,0.383-0.172,0.383-0.383v-2.681h1.013l2.546,2.567c0.242,0.249,0.652,0.065,0.652-0.27v-2.298h1.533c0.211,0,0.383-0.172,0.383-0.382V4.063C18.042,3.853,17.87,3.681,17.659,3.681 M11.148,12.87H6.937c-0.102,0-0.199,0.04-0.27,0.113l-2.028,2.025v-1.756c0-0.211-0.172-0.383-0.383-0.383H2.724V7.51h5.361v2.68c0,0.21,0.172,0.382,0.383,0.382h2.68V12.87z M17.276,9.807h-1.533c-0.211,0-0.383,0.172-0.383,0.383v1.755L13.356,9.92c-0.07-0.073-0.169-0.113-0.27-0.113H8.851v-5.36h8.425V9.807z"></path>
+                    </svg>
+                    
+                    LANGUAGES</h2>
+                    <ul>
+                        <li>
+                            <svg class="svg-icon" viewBox="0 0 20 20">
+                                <path d="M10.219,1.688c-4.471,0-8.094,3.623-8.094,8.094s3.623,8.094,8.094,8.094s8.094-3.623,8.094-8.094S14.689,1.688,10.219,1.688 M10.219,17.022c-3.994,0-7.242-3.247-7.242-7.241c0-3.994,3.248-7.242,7.242-7.242c3.994,0,7.241,3.248,7.241,7.242C17.46,13.775,14.213,17.022,10.219,17.022 M15.099,7.03c-0.167-0.167-0.438-0.167-0.604,0.002L9.062,12.48l-2.269-2.277c-0.166-0.167-0.437-0.167-0.603,0c-0.166,0.166-0.168,0.437-0.002,0.603l2.573,2.578c0.079,0.08,0.188,0.125,0.3,0.125s0.222-0.045,0.303-0.125l5.736-5.751C15.268,7.466,15.265,7.196,15.099,7.03"></path>
+                            </svg>
+                            Ukrainian</li>
+                        <li><svg class="svg-icon" viewBox="0 0 20 20">
+                            <path d="M10.219,1.688c-4.471,0-8.094,3.623-8.094,8.094s3.623,8.094,8.094,8.094s8.094-3.623,8.094-8.094S14.689,1.688,10.219,1.688 M10.219,17.022c-3.994,0-7.242-3.247-7.242-7.241c0-3.994,3.248-7.242,7.242-7.242c3.994,0,7.241,3.248,7.241,7.242C17.46,13.775,14.213,17.022,10.219,17.022 M15.099,7.03c-0.167-0.167-0.438-0.167-0.604,0.002L9.062,12.48l-2.269-2.277c-0.166-0.167-0.437-0.167-0.603,0c-0.166,0.166-0.168,0.437-0.002,0.603l2.573,2.578c0.079,0.08,0.188,0.125,0.3,0.125s0.222-0.045,0.303-0.125l5.736-5.751C15.268,7.466,15.265,7.196,15.099,7.03"></path>
+                        </svg>Russian</li>
+                        <li><svg class="svg-icon" viewBox="0 0 20 20">
+                            <path d="M10.219,1.688c-4.471,0-8.094,3.623-8.094,8.094s3.623,8.094,8.094,8.094s8.094-3.623,8.094-8.094S14.689,1.688,10.219,1.688 M10.219,17.022c-3.994,0-7.242-3.247-7.242-7.241c0-3.994,3.248-7.242,7.242-7.242c3.994,0,7.241,3.248,7.241,7.242C17.46,13.775,14.213,17.022,10.219,17.022 M15.099,7.03c-0.167-0.167-0.438-0.167-0.604,0.002L9.062,12.48l-2.269-2.277c-0.166-0.167-0.437-0.167-0.603,0c-0.166,0.166-0.168,0.437-0.002,0.603l2.573,2.578c0.079,0.08,0.188,0.125,0.3,0.125s0.222-0.045,0.303-0.125l5.736-5.751C15.268,7.466,15.265,7.196,15.099,7.03"></path>
+                        </svg>English - A2 (in process)</li>
+                    </ul>
+            </section>
+<hr>
+            <section class="content__works" id="worksSection">
+                <h2 class="content__skills-title">WORKS</h2>
+
+
+
+                <div class="content__skills-inner">
+
+
+
+                    <div class="skills__item ">
+
+                        <div class="skills__item-text">
+                            <a href="https://ab3pc-todo.herokuapp.com/" target="_blank">
+                                <h3>Simple ToDo</h3>
+                            </a>
+                            
+                        </div>
+                        <p>React, Redux Toolkit</p>
                     </div>
 
-                    <div class="experiences__company-project">
-                      <span class="experiences__company-project-role">Binary Studio Cat</span>
-                      <h3 class="experiences__company-project-name">Hooman project</h3>
-                      <ul class="experiences__company-project-responsibilities">
-                        <li>Supported hoomans</li>
-                        <li>Slept all the time</li>
-                        <li>Lied on the keyboard</li>
-                        <li>Watched my hoomans working</li>
-                      </ul>
+
+                    <div class="skills__item">
+
+                        <div class="skills__item-text">
+                            <a href="https://ab3pc-simplechat.herokuapp.com/" target="_blank">
+                                <h3>Chat</h3>
+                            </a>
+
+                        </div>
+                        <p>React, socket IO</p>
                     </div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="additional-info fv">
-                <div class="additional-info__education">
-                  <h3 class="additional-info__education-header">Education</h3>
-                  <div class="additional-info__education-university">
-                    <span class="additional-info__education-university-durability">2021</span>
-                    <h3 class="additional-info__education-university-speciality">Cat track</h3>
-                    <p class="additional-info__education-university-name">Binary Studio Academy</p>
-                  </div>
+
+                    <div class="skills__item">
+
+                        <div class="skills__item-text">
+                            <a href="https://fotrunajob.herokuapp.com/" target="_blank">
+                                <h3>FortunaJob</h3>
+                            </a>
+
+                        </div>
+                        <p>React, Redux</p>
+                    </div>
+
+
+                    
+
+                    <div class="skills__item">
+
+                        <div class="skills__item-text">
+                            <a href="https://money-converter-six.vercel.app/" target="_blank">
+                                <h3>Money-converter</h3>
+                            </a>
+
+                        </div>
+                        <p>React + TS</p>
+                    </div>
+
+                    <div class="skills__item">
+
+                        <div class="skills__item-text">
+                            <a href="https://find-repo.vercel.app/" target="_blank">
+                                <h3>Find github repo</h3>
+                            </a>
+
+                        </div>
+                        <p>Find some GIT repo</p>
+                    </div>
+
+
                 </div>
 
-                <div class="additional-info__languages">
-                  <h3 class="additional-info__languages-header">Languages</h3>
-                  <p class="additional-info__languages-item">Meow dialect</p>
-                  <p class="additional-info__languages-item">Ukrainian (understand)</p>
-                  <p class="additional-info__languages-item">English (don't understand)</p>
-                </div>
-              </div>
-            </div>
+
+
+
+            </section>
+            <hr>
           </div>
         </div>
       </div>
     </main>
+    <script src="./app.js"></script>
   </body>
 </html>
