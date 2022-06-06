@@ -67,8 +67,20 @@ const DUMMY_DATA = [
     ],
   },
 ];
-
+let aboutInfo = {
+  official:
+    "I'm a goal oriented front-end developer with experience in creating Landing Pages and SPA, using React(JS/TS), Redux, HTML & CSS. Now I am improving my skills in this direction and expanding them with new technologies...",
+  unofficial:
+    "Привіт, мене звати Олександр і я Junior frontend developer (React / React Navite). Прийшов отримати знання та той самий містичний 'комерційний досвід' який шукають всі джуни О_о або хоча б досвід, який максимально наближений до такого. Читав, що в Binary Studio Academy  буде тяжко але максимально корисно для розвитку - як розробник...so...here we are.Як кажуть в народі: 'Не тупи - а скоріш в Binary Studio Academy попади' :)",
+  activeOfficial: true,
+};
+/*=====Variables=====*/
 const timeLine = document.querySelector("#timeLineSection");
+const unofficaialBTN = document.querySelector("#unofficialMode");
+const intro_text = document.querySelector("#intro_text");
+const avatar = document.querySelector("#avatar");
+
+/*=====RenderTimeLines=====*/
 DUMMY_DATA.forEach((item) => {
   let dates = "";
   item.dates.forEach((item) => {
@@ -84,12 +96,26 @@ DUMMY_DATA.forEach((item) => {
 </div>`;
 });
 
+/*=====Show dates => TimeLines=====*/
 const findDate = (year) => {
   let element = document.getElementById(`${year}`);
   element.classList.toggle("show");
-  console.log(element.s);
 };
 timeLine.addEventListener("click", (e) => {
-  console.log(e.target.innerHTML);
   findDate(e.target.innerHTML);
+});
+
+/*=====Unofficaial MODE=====*/
+unofficaialBTN.addEventListener("click", (e) => {
+  unofficaialBTN.classList.toggle("active");
+  
+  if (aboutInfo.activeOfficial) {
+    intro_text.textContent = aboutInfo.unofficial;
+    aboutInfo.activeOfficial = false;
+    avatar.src = './assets/avatarUN.jpg'
+  } else {
+    intro_text.textContent = aboutInfo.official;
+    aboutInfo.activeOfficial = true;
+    avatar.src = './assets/avatar.jpg'
+  }
 });
