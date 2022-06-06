@@ -308,6 +308,17 @@ margin-left: 30px;
 	border-radius: 50%;
 	transition: box-shadow 0.1s linear;
 }
+.content__works .skills__item{
+  width: 45%;
+}
+.content__works .skills__item a{
+  text-decoration: none;
+  color: #000;
+}
+.content__works .skills__item a:hover{
+  
+  color: #fff;
+}
 
 @media screen and (max-width: 576px) {
   .main-info,
@@ -357,6 +368,9 @@ margin-left: 30px;
     justify-content: center;
   }
   .skills__item {
+    width: 60%;
+  }
+  .content__works .skills__item{
     width: 60%;
   }
 }
